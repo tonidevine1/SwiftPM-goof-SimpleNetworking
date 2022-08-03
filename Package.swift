@@ -12,11 +12,10 @@ let package = Package(
             targets: ["SimpleNetworking"]),
     ],
     dependencies: [
-        .package(url: "<https://github.com/ct4h/Telegrammer.git>", from: "0.4.2"),
-        .package(url: "<https://github.com/vapor/vapor.git>", from: "3.0.0"),
-        .package(url: "<https://github.com/BrettRToomey/Jobs.git>", from: "1.1.1"),
-        .package(url: "<https://github.com/vapor/fluent-postgresql.git>", from: "1.0.0"),
-        .package(url: "<https://github.com/vapor/fluent-mysql.git>", from: "3.0.0")
+        .package(url: "https://github.com/apple/swift-system.git", .upToNextMajor(from: "1.0.0")),
+        .package(url: "https://github.com/apple/swift-atomics.git", .upToNextMajor(from: "1.0.0")),
+        .package(url: "https://github.com/apple/swift-argument-parser.git", .upToNextMajor(from: "1.0.0")),
+        .package(url: "https://github.com/ct4h/Telegrammer.git", from: "0.4.2"),
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
     ],
